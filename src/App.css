@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.dice-grid {
+  width: 500px;
+  height: 400px;
+  margin-top: 50px;
+  display: inline-grid;
+  grid-template-columns: 50px 50px 1fr 150px;
+  grid-template-rows: repeat(6, 1fr);
+  border: 1px solid black;
+}
+
+.D6 {
+  display: inline-grid;
+  grid-column: 1 / span 5;
+  border-bottom: 1px solid black;
+  grid-template-areas: 
+    "die x dice-count score"  
+  ;
+}
+
+.die {
+  grid-area: die;
+  width: 100%;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.x {
+  grid-area: x;
+  width: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+.DiceCount {
+  grid-area: dice-count;
+  width: 250px;
+  align-self: center;
+  justify-self: center;
+}
+
+.total-dice {
+  width: 25px;
+  margin: 0 10px 0 10px;
+}
+
+.score {
+  grid-area: score;
+  width: 100px;
+  align-self: center;
+  justify-self: center;
+}
