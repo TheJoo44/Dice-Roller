@@ -1,10 +1,12 @@
-import React from 'react';
-import DiceGrid from './DiceGrid'
+import React, { useState } from 'react';
 
-function Roller(props) {
+
+function Roller() {
+  const [score, setScore] = useState(0)
+
   return (
     <div>
-      <DiceGrid />
+      {score}
     </div>
   )
 }

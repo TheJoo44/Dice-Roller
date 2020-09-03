@@ -17,7 +17,7 @@
   height: 400px;
   margin-top: 50px;
   display: inline-grid;
-  grid-template-columns: 50px 50px 1fr 150px;
+  grid-template-columns: 50px 50px 1fr 1fr 150px;
   grid-template-rows: repeat(6, 1fr);
   border: 1px solid black;
 }
@@ -27,7 +27,7 @@
   grid-column: 1 / span 5;
   border-bottom: 1px solid black;
   grid-template-areas: 
-    "die x dice-count score"  
+    "die x dice-label score-button score"  
   ;
 }
 
@@ -41,21 +41,30 @@
 
 .x {
   grid-area: x;
-  width: 50px;
+  width: 100%;
   align-self: center;
   justify-self: center;
 }
 
-.DiceCount {
-  grid-area: dice-count;
-  width: 250px;
+.dice-label {
+  grid-area: dice-label;
+  width: 100%;
   align-self: center;
   justify-self: center;
 }
 
 .total-dice {
+  
   width: 25px;
   margin: 0 10px 0 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+.score-button {
+  grid-area: score-button;
+  align-self: center;
+  justify-self: center;
 }
 
 .score {
