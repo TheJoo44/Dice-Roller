@@ -12,13 +12,27 @@
   color: white;
 }
 
+.App-footer {
+  background-color: #282c34;
+  min-height: 1vh;
+  width: 100%;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
 .dice-grid {
   width: 450px;
   height: 400px;
   margin-top: 50px;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 2fr 2fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   border: 1px solid black;
 }
 
@@ -30,10 +44,16 @@
     "die x total-dice dice-count score-button score";
 }
 
+.D100 {
+  display: inline-grid;
+  grid-column: 1 / span 6;
+  grid-template-areas: 
+    "die x total-dice dice-count score-button score";
+}
+
 
 .die {
   grid-area: die;
-  /* width: 50px; */
   margin: 0;
   align-self: center;
   justify-self: center;
@@ -41,7 +61,6 @@
 
 .x {
   grid-area: x;
-  /* width: 100%; */
   margin: 0;
   align-self: center;
   justify-self: center;
@@ -49,7 +68,6 @@
 
 .total-dice {
   grid-area: total-dice;
-  /* width: 100%; */
   margin: 0;
   align-self: center;
   justify-self: center;
@@ -72,7 +90,6 @@
 
 .score {
   grid-area: score;
-  /* width: 100px; */
   margin: 0;
   align-self: center;
   justify-self: center;

@@ -23,7 +23,7 @@ function D100() {
   }
 
   return (
-    <div className="D">
+    <div className="D100">
       <p className="die">D100</p>
       <p className="x">x</p>
       <p className="total-dice">Total Dice: </p>
