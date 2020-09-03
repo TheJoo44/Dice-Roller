@@ -13,27 +13,27 @@
 }
 
 .dice-grid {
-  width: 500px;
+  width: 450px;
   height: 400px;
   margin-top: 50px;
   display: inline-grid;
-  grid-template-columns: 50px 50px 1fr 1fr 150px;
+  grid-template-columns: 1fr 1fr 2fr 1fr 2fr 2fr;
   grid-template-rows: repeat(6, 1fr);
   border: 1px solid black;
 }
 
-.D6 {
+.D {
   display: inline-grid;
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 6;
   border-bottom: 1px solid black;
   grid-template-areas: 
-    "die x dice-label score-button score"  
-  ;
+    "die x total-dice dice-count score-button score";
 }
+
 
 .die {
   grid-area: die;
-  width: 100%;
+  /* width: 50px; */
   margin: 0;
   align-self: center;
   justify-self: center;
@@ -41,22 +41,24 @@
 
 .x {
   grid-area: x;
-  width: 100%;
-  align-self: center;
-  justify-self: center;
-}
-
-.dice-label {
-  grid-area: dice-label;
-  width: 100%;
+  /* width: 100%; */
+  margin: 0;
   align-self: center;
   justify-self: center;
 }
 
 .total-dice {
-  
-  width: 25px;
-  margin: 0 10px 0 10px;
+  grid-area: total-dice;
+  /* width: 100%; */
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.dice-count {
+  grid-area: dice-count;
+  width: 35px;
+  margin: 0;
   align-self: center;
   justify-self: center;
 }
@@ -65,11 +67,13 @@
   grid-area: score-button;
   align-self: center;
   justify-self: center;
+  margin: 0;
 }
 
 .score {
   grid-area: score;
-  width: 100px;
+  /* width: 100px; */
+  margin: 0;
   align-self: center;
   justify-self: center;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function D6() {
+function D100() {
   const [score, setScore] = useState(0);
   const [value, changeValue] = useState(1);
   useEffect(() => { }, []);
@@ -15,7 +15,7 @@ function D6() {
     let totalRoll = 0;
 
     while (i <= value) {
-      totalRoll = totalRoll + (Math.floor(Math.random() * 6) + 1);
+      totalRoll = totalRoll + (Math.floor(Math.random() * 100) + 1);
       i++
     }
 
@@ -24,14 +24,14 @@ function D6() {
 
   return (
     <div className="D">
-      <p className="die">D6</p>
+      <p className="die">D100</p>
       <p className="x">x</p>
       <p className="total-dice">Total Dice: </p>
       <input type="number" className="dice-count" onChange={() => changed()} id="howMany" />
-      <button type="button" className="score-button" onClick={calculateTotalScore}>Roll Your D6</button>
+      <button type="button" className="score-button" onClick={calculateTotalScore}>Roll Your D100</button>
       <p className="score">Score: {score}</p>
     </div>
   )
 }
 
-export default D6 
+export default D100
