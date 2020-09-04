@@ -1,3 +1,11 @@
+body {
+  background-image: url('../src/images/bkgd2.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -28,12 +36,15 @@
 
 .dice-grid {
   width: 450px;
-  height: 400px;
+  height: 500px;
   margin-top: 50px;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 2fr 2fr;
   grid-template-rows: repeat(7, 1fr);
-  border: 1px solid black;
+  background-image: url('../src/images/parch2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .D {
