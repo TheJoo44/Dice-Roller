@@ -29,7 +29,7 @@ body {
 .h1-text {
   font-size: 35px;
   background: -webkit-linear-gradient(#683813, #BE8347); 
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
