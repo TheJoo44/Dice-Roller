@@ -1,7 +1,7 @@
 body {
   background-image: url('../src/images/bkgd2.jpg');
   background-position: center; 
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -11,13 +11,26 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 10vh;
+  background-image: url('../src/images/parch2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 7vh;
+  height: 8vh;
+  letter-spacing: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  font-family: 'Caesar Dressing', cursive;
+}
+
+.h1-text {
+  font-size: 35px;
+  background: -webkit-linear-gradient(#683813, #BE8347); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .App-footer {
@@ -30,7 +43,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -45,6 +58,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 .D {
@@ -53,6 +67,7 @@ body {
   border-bottom: 1px solid black;
   grid-template-areas: 
     "die x total-dice dice-count score-button score";
+  font-family: 'UnifrakturCook', cursive;
 }
 
 .D100 {
@@ -60,6 +75,7 @@ body {
   grid-column: 1 / span 6;
   grid-template-areas: 
     "die x total-dice dice-count score-button score";
+  font-family: 'UnifrakturCook', cursive;  
 }
 
 
@@ -90,6 +106,9 @@ body {
   margin: 0;
   align-self: center;
   justify-self: center;
+  background-color: #BE8347;
+  border-radius: 4px;
+
 }
 
 .score-button {
@@ -97,6 +116,9 @@ body {
   align-self: center;
   justify-self: center;
   margin: 0;
+  font-family: 'UnifrakturCook', cursive;
+  border-radius: 4px;
+  background-color: #BE8347;
 }
 
 .score {
