@@ -33,6 +33,23 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.intro {
+  margin: 0 auto;
+  width: 75vw;
+  background-image: url('../src/images/parch2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.instructions {
+  background: -webkit-linear-gradient(#683813, #14150F); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .App-footer {
   background-color: #282c34;
   min-height: 1vh;
