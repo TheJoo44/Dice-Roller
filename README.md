@@ -10,3 +10,6 @@ When you enter a number into the Total Dice field and click the roll button, the
 
 ## Dice Rolled Screenshot
 ![Dice Rolled](src/images/diceRolled.png)
+
+
+This app was built using JavaScript, React, & CSS.
