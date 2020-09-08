@@ -6,7 +6,7 @@ function D8() {
   useEffect(() => { }, []);
 
   const changed = () => {
-    let inputValue = document.getElementById('howMany').value
+    let inputValue = document.getElementById('howMany8').value
     changeValue(inputValue)
   }
 
@@ -15,7 +15,8 @@ function D8() {
     let totalRoll = 0;
 
     while (i <= value) {
-      totalRoll = totalRoll + (Math.floor(Math.random() * 8) + 1);
+      let roll = Math.floor(Math.random() * 8) + 1;
+      totalRoll = totalRoll + roll;
       i++
     }
 
@@ -27,7 +28,7 @@ function D8() {
       <p className="die">D8</p>
       <p className="x">x</p>
       <p className="total-dice">Total Dice: </p>
-      <input type="number" className="dice-count" onChange={() => changed()} id="howMany" />
+      <input type="number" className="dice-count" onChange={() => changed()} id="howMany8" />
       <button type="button" className="score-button" onClick={calculateTotalScore}>Roll Your D8</button>
       <p className="score">Score: {score}</p>
     </div>

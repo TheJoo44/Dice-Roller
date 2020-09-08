@@ -6,7 +6,7 @@ function D6() {
   useEffect(() => { }, []);
 
   const changed = () => {
-    let inputValue = document.getElementById('howMany').value
+    let inputValue = document.getElementById('howMany6').value;
     changeValue(inputValue)
   }
 
@@ -27,7 +27,7 @@ function D6() {
       <p className="die">D6</p>
       <p className="x">x</p>
       <p className="total-dice">Total Dice: </p>
-      <input type="number" className="dice-count" onChange={() => changed()} id="howMany" />
+      <input type="number" id="howMany6" className="dice-count" onChange={() => changed()} />
       <button type="button" className="score-button" onClick={calculateTotalScore}>Roll Your D6</button>
       <p className="score">Score: {score}</p>
     </div>
