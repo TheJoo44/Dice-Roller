@@ -15,7 +15,7 @@ function D12() {
     let totalRoll = 0;
 
     while (i <= value) {
-      let roll = Math.floor(Math.random() * 100) + 1;
+      let roll = Math.floor(Math.random() * 12) + 1;
       totalRoll = totalRoll + roll;
       i++
     }
